@@ -26,3 +26,11 @@ jobs:
           python -m pytest tests -x -m task0_2
           python -m pytest tests -x -m task0_3
           python -m pytest tests -x -m task0_4
+
+      - name: Test Module 1
+        run: |
+          python -m pytest tests -x -m task1_1
+          python -m pytest tests -x -m task1_2
+          python -m pytest tests -x -m task1_3
+          python -m pytest tests -x -m task1_4
+          python -m pytest tests/test_scalar.py::test_simple -q

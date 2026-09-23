@@ -179,3 +179,6 @@ def sum(ls: Iterable[float]) -> float:
 def prod(ls: Iterable[float]) -> float:
     "Calculate the product of all elements in a list using reduce"
     return reduce(mul, 1)(ls)
+
+def gt(x: float, y: float) -> float:
+    return 1.0 if x > y else 0.0
